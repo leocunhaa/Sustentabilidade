@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustentabilidade nas Organizações</title>
+    <!-- Link do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1>Sustentabilidade nas Organizações</h1>
+            <p style="font-size: 20px";>Pequenas ações podem gerar grandes impactos para o futuro do planeta e da empresa.</p>
+            <a href="#sustentabilidade" class="btn btn-light btn-lg" style="transform:translateY(50px)";>Saiba mais</a>
+        </div>
+    </header>
+
+    <!-- Discurso sobre Sustentabilidade -->
+    <section id="sustentabilidade" class="sustentabilidade-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sustentabilidade nas Organizações</h2>
+            <p class="lead text-center">
+                A sustentabilidade nas organizações não se resume apenas a grandes ações, mas começa com pequenas mudanças no dia a dia de cada colaborador. Promover um ambiente de trabalho sustentável traz benefícios tanto para o meio ambiente quanto para o clima organizacional, aumentando a eficiência e reduzindo custos. Aqui estão alguns exemplos práticos de como cada funcionário pode contribuir:
+            </p>
+            <p class="lead text-center" style="font-weight: bold;">
+                Aqui estão alguns exemplos práticos de como cada funcionário pode contribuir:
+            </p>
+
+            <!-- Exemplo de ações sustentáveis com caixinhas -->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="caixa p-4 mb-4">
+                        <h3>Apagar as Luzes</h3>
+                        <p>Certifique-se de apagar as luzes quando sair de uma sala que não será utilizada por mais de 15 minutos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caixa p-4 mb-4">
+                        <h3>Desligar o Ar Condicionado</h3>
+                        <p>Desligue o ar condicionado se o ambiente estiver desocupado por 15 minutos ou mais.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caixa p-4 mb-4">
+                        <h3>Gastar Menos Água</h3>
+                        <p>Evite o desperdício de água ao lavar as mãos, utilizar a cozinha ou os banheiros da empresa.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caixa p-4 mb-4">
+                        <h3>Jogar o Lixo no Lixo</h3>
+                        <p>Descarte corretamente os resíduos, separando recicláveis de orgânicos e evitando poluição.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caixa p-4 mb-4">
+                        <h3 style="font-weight: bold;">Utilizar Materiais Sustentáveis</h3>
+                        <p>Prefira o uso de materiais recicláveis ou reutilizáveis, como canecas no lugar de copos descartáveis.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caixa p-4 mb-4">
+                        <h3>Evitar Impressões Desnecessárias</h3>
+                        <p>Imprima apenas quando realmente necessário e opte por usar documentos digitais sempre que possível.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Registro de Ações Sustentáveis com fundo verde -->
+<section id="registro-acoes" class="bg-success text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Registre Suas Ações Sustentáveis</h2>
+        <p class="text-center mb-4">Queremos reconhecer e incentivar as ações sustentáveis que você realiza todos os dias. Preencha o formulário abaixo para nos contar sobre sua contribuição.</p>
+
+        <form id="sustentabilityForm" class="mx-auto" style="max-width: 600px;" method="POST" action="/submit-form">
+            <div class="mb-3">
+                <label for="setor" class="form-label">Setor</label>
+                <select class="form-select" id="setor" name="setor" required>
+                    <option selected disabled value="">Escolha o setor</option>
+                    <option value="RH">RH</option>
+                    <option value="TI">TI</option>
+                    <option value="Secretaria">Secretaria</option>
+                    <option value="Apoio">Apoio</option>
+                    <option value="Diretoria">Diretoria</option>
+                    <option value="Comunicação">Comunicação</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="acao" class="form-label">Ação Sustentável</label>
+                <select class="form-select" id="acao" name="acao" required>
+                    <option selected disabled value="">Escolha a ação realizada</option>
+                    <option value="Apagar Luz">Apagar Luz</option>
+                    <option value="Gastar Menos Água">Gastar Menos Água</option>
+                    <option value="Desligar Ar Condicionado">Desligar Ar Condicionado</option>
+                    <option value="Jogar Lixo no Lixo">Jogar Lixo no Lixo</option>
+                    <option value="Evitar Impressões">Evitar Impressões</option>
+                    <option value="Utilizar Materiais Sustentáveis">Utilizar Materiais Sustentáveis</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="descricao" class="form-label">Descrição (Opcional)</label>
+                <textarea class="form-control" id="descricao" name="descricao" rows="3" placeholder="Descreva sua ação sustentável (opcional)"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light w-100">Enviar</button>
+        </form>
+    </div>
+</section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Sustentabilidade nas Organizações. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link do Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('sustentabilityForm').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Impedir o envio padrão do formulário
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            const response = await fetch('/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            const message = await response.text();
+            alert(message); // Exibir a mensagem de resposta do servidor
+        });
+    </script>
+</body>
+</html>

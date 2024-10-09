@@ -1,0 +1,75 @@
+/* Ajustes gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #56ab2f, #a3ee47) !important;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sustentabilidade-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Estilo das caixinhas */
+.caixa {
+    background-color: #e3f2e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.caixa:hover {
+    transform: translateY(-10px);
+}
+
+.caixa h3 {
+    font-size: 1.5rem;
+    color: #56ab2f;
+}
+
+/* Formulário */
+form label {
+    font-weight: bold;
+}
+
+form button {
+    font-size: 1.2rem;
+}
+
+/* Botão Enviar */
+.btn-light {
+    background-color: white;
+    color: #56ab2f;
+    border: 2px solid #56ab2f;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #56ab2f;
+    color: white;
+}
+
+/* Ajuste das cores para os detalhes */
+.bg-success {
+    background: linear-gradient(to right, #56ab2f, #89cd36) !important;
+}
+
+h3{
+    font-weight: bold;
+}
