@@ -59,12 +59,12 @@ app.get('/resultados', async (req, res) => {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resultados da Competição</title>
-        <link href="/results.css" rel="stylesheet"> <!-- Caminho atualizado para o CSS -->
+        <title>Resultados</title>
+        <link href="/results.css" rel="stylesheet">
       </head>
       <body>
         <div class="container text-center">
-          <h1>Resultados da Competição</h1>
+          <h1>Resultados</h1>
           <div class="podium">
             ${ranking[1] ? `<div class="second col-md-3"><h2>2º Lugar</h2><p>${ranking[1]._id}</p><p>${ranking[1].total} ações</p></div>` : ''}
             ${ranking[0] ? `<div class="first col-md-3"><h2>1º Lugar</h2><p>${ranking[0]._id}</p><p>${ranking[0].total} ações</p></div>` : ''}
