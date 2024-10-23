@@ -14,6 +14,7 @@ app.use(express.static(__dirname)); // Isto serve os arquivos estáticos da past
 
 // Conectar ao MongoDB
 mongoose.connect(process.env.MONGO_URI, {
+  serverSelectionTimeoutMS: 30000 // 30 segundos
 }).then(() => {
   console.log('Conectado ao MongoDB');
 }).catch(err => {
